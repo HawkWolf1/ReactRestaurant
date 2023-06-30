@@ -1,11 +1,11 @@
 import React from 'react';
-import OrderForm from './OrderForm';
+import Form from'./Form'
 
 const App = () => {
   return (
     <div>
-      <h1>Order Form</h1>
-      <OrderForm />
+      <h1>MY RESTAURANT</h1>
+      <Form/>
     </div>
   );
 };
