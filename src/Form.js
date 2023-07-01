@@ -10,7 +10,7 @@ function Form({ onSubmit }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit({ OrderID, Price, Dish, Table });
+    onSubmit({ OrderID, Price, Dish, Table});
   };
 
   return (
@@ -33,14 +33,14 @@ function Form({ onSubmit }) {
         </label>
 
         <label>
-        CHOOSE TABLE:
-        <select value={Table} onChange={setTable}>
+          CHOOSE TABLE:
+          <select value={Table} onChange={(event) => setTable(event.target.value)}>
           <option value="">Select a table</option>
           <option value="Table 1">Table 1</option>
           <option value="Table 2">Table 2</option>
           <option value="Table 3">Table 3</option>
-        </select>
-      </label>
+          </select>
+        </label>
 
         <button type="submit">Submit</button>
       </div>
